@@ -1,14 +1,14 @@
-terraform {
+#terraform {
 
-  backend "s3" {
-    bucket         = "dev-terraform-state-op7z4c" 
-    key            = "global/s3/terraform-main.tfstate"
-    region         = "eu-central-1"
-    dynamodb_table = "terraform-state"
-    encrypt        = true
-  }
+ # backend "s3" {
+ #   bucket         = "dev-terraform-state-op7z4c" 
+ #   key            = "global/s3/terraform-main.tfstate"
+ #   region         = "eu-central-1"
+ #   dynamodb_table = "terraform-state"
+ #   encrypt        = true
+ # }
 
-}
+#}
 
 
 terraform {
@@ -26,7 +26,7 @@ provider "aws" {
 }
 
 resource "random_string" "suffix" {
-  length  = 6
+  length  = 14
   special = false
   upper   = false
 }
