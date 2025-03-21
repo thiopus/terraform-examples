@@ -1,14 +1,14 @@
-#terraform {
+terraform {
 
- # backend "s3" {
- #   bucket         = "dev-terraform-state-op7z4c" 
- #   key            = "global/s3/terraform-main.tfstate"
- #   region         = "eu-central-1"
- #   dynamodb_table = "terraform-state"
- #   encrypt        = true
- # }
+  backend "s3" {
+    bucket         = "dev-terraform-state-p8bpxhodpahp30" 
+    key            = "global/s3/terraform-main.tfstate"
+    region         = "eu-central-1"
+    dynamodb_table = "terraform-state"
+    encrypt        = true
+  }
 
-#}
+}
 
 
 terraform {
