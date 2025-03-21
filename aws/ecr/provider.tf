@@ -11,7 +11,7 @@ terraform {
 
 
   backend "s3" {
-    bucket         = "dev-terraform-state-op7z4c"
+    bucket         = "dev-terraform-state-p8bpxhodpahp30"
     key            = "global/ecr/terraform-ecr.tfstate"
     region         = "eu-central-1"
     dynamodb_table = "terraform-state"
